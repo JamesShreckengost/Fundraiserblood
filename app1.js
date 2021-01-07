@@ -26,3 +26,35 @@ function checkName(){
 function likeDogs(){
     prompt('Do you like dogs?')
     }
+
+    function printNumbers(){
+        for(let i = 0; i <10; i++){
+            document.write('<li>' + i + '</li>')
+        }
+    }
+    
+    let correctAnswer = 34;
+    
+    function guessingGame(){
+        let userAnswer = prompt('Please pick a number 1 - 50');
+        while (userAnswer < 1 || userAnswer > 100){
+            userAnswer = prompt('Incorrect. Please select a number 1 - 50');
+        }
+        let numberofGuesses = 8
+        for(let i = 0; i < numberofGuesses; i++){
+            if (userAnswer == correctAnswer){
+                alert('Great Job, you got it right');
+                break;
+         } 
+                else if (userAnswer < correctAnswer){
+                    alert('Sorry to low)');
+                    userAnswer = prompt('Please select a number 1 - 50');
+         }      else if (userAnswer > correctAnswer){
+                    alert('Sorry to high');
+                    userAnswer = prompt('Please select a number 1 - 50');
+             }
+        }
+    }
+
+    var nameString = 'Jar jar'
+    console.log(typeof(nameString))
