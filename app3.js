@@ -1,3 +1,6 @@
-let username = confirm('Please Enter Your Name');
+function asklikePitbulls(){
 
-document.write(userName)
+let likePitbulls = confirm('Do you like pitbulls?');
+
+document.write("the user " + userName + " likes pitbulls: " + likePitbulls )
+}
