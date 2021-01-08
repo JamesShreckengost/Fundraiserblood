@@ -44,6 +44,7 @@ function likeDogs(){
         for(let i = 0; i < numberofGuesses; i++){
             if (userAnswer == correctAnswer){
                 alert('Great Job, you got it right');
+                pitbullPicture();
                 break;
          } 
                 else if (userAnswer < correctAnswer){
@@ -56,5 +57,8 @@ function likeDogs(){
         }
     }
 
-    var nameString = 'Jar jar'
-    console.log(typeof(nameString))
+   function pitbullPicture(){
+       for(let i = 0; i < 2; i++){
+           document.write('<img src="https://wallpaper-house.com/data/out/10/wallpaper2you_389315.jpg" img>')
+       }
+   }
